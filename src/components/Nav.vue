@@ -64,10 +64,11 @@ export default {
   main {
     margin-left: 90px;
     margin-right: 190px;
-    padding: 16px;
+    padding: 16px 40px;
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     a {
       margin: 0 18px;
     }
@@ -85,9 +86,10 @@ export default {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   main {
-    display: none;
+    visibility: hidden;
+    height: 52px;
   }
 }
 </style>
