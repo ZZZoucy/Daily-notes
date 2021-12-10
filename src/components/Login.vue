@@ -139,9 +139,6 @@ export default {
         .then(() => {
           this.login.isError = false;
           this.login.notice = "";
-          // 登录账号后，将 userInfo 传递出去，在 Avatar 组件中接受
-          Bus.$emit("userInfo", { username: this.login.username });
-          // 如果登录成功了，就跳转到笔记本列表页
           this.$router.push({ path: "notebooks" });
         })
         .catch(data => {
@@ -181,9 +178,7 @@ export default {
   display: flex;
   .main {
     flex: 1;
-    background: #36bc64
-      url(//cloud.hunger-valley.com/17-12-13/38476998.jpg-middle) center center
-      no-repeat;
+    background: #36bc64 url(../assets/1.jpeg) center center no-repeat;
     background-size: contain;
   }
   .form {

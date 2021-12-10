@@ -7,7 +7,9 @@
       <div class="note-detail-ct" v-show="curNote.id">
         <div class="note-bar">
           <span> 创建日期: {{ curNote.createdAtFriendly }}</span>
+          <span> | </span>
           <span> 更新日期: {{ curNote.updatedAtFriendly }}</span>
+          <span> | </span>
           <span> {{ statusText }}</span>
           <span class="iconfont icon-delete" @click="onDeleteNote"></span>
           <span
