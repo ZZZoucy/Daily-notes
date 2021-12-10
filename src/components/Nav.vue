@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <header>
-      <img class="logo" src="../assets/logo.svg" alt="logo" />
+      <img class="logo" src="../assets/images/logo.svg" alt="logo" />
     </header>
     <main>
       <a
@@ -30,12 +30,12 @@
     </main>
     <footer>
       <a href="https://www.zhihu.com/" target="_blank">
-        <img src="../assets/知乎.svg" alt="github" />
+        <img src="../assets/images/知乎.svg" alt="github" />
       </a>
       <a href="https://juejin.cn/" target="_blank">
-        <img src="../assets/掘金.svg" alt="github" /> </a
+        <img src="../assets/images/掘金.svg" alt="github" /> </a
       ><a href="https://github.com/" target="_blank" class="right">
-        <img src="../assets/github.svg" alt="github" />
+        <img src="../assets/images/github.svg" alt="github" />
       </a>
     </footer>
   </div>

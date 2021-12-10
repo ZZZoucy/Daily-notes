@@ -178,7 +178,7 @@ export default {
   display: flex;
   .main {
     flex: 1;
-    background: #36bc64 url(../assets/1.jpeg) center center no-repeat;
+    background: #36bc64 url(../assets/images/page.jpeg) center center no-repeat;
     background-size: contain;
   }
   .form {
