@@ -32,7 +32,7 @@ body {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #eee;
+  background-color: rgb(245, 244, 244);
 }
 a {
   text-decoration: none;
@@ -45,7 +45,7 @@ li {
 .btn {
   color: #666;
   font-size: 12px;
-  padding: 2px 4px;
+  padding: 0px 4px;
   background-color: #fff;
   box-shadow: 0px 0px 2px 0px #ccc;
   border: none;

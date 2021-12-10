@@ -1,13 +1,12 @@
 <template>
   <div class="detail" id="notebook-list">
-    <header>
-      <a href="#" class="btn" @click.prevent="onCreate"
-        ><i class="iconfont icon-plus"></i> 新建笔记本</a
-      >
-    </header>
+    <Nav />
+    <a href="#" class="btn" @click.prevent="onCreate"
+      ><i class="iconfont icon-plus"></i> 新建笔记本</a
+    >
     <main>
       <div class="layout">
-        <h3>笔记本列表({{ notebooks.length }})</h3>
+        <h3>学习笔记({{ notebooks.length }})</h3>
         <div class="book-list">
           <router-link
             v-for="notebook in notebooks"
@@ -33,6 +32,7 @@
   </div>
 </template>
 <script>
+import Nav from "@/components/Nav";
 import { friendlyDate } from "@/helpers/util";
 import { mapState, mapActions, mapGetters } from "vuex";
 //window.Notebooks = Notebooks
@@ -41,6 +41,7 @@ export default {
   data() {
     return {};
   },
+  components: { Nav },
 
   created() {
     this.checkLogin({ path: "/login" });
