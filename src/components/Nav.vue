@@ -1,6 +1,8 @@
 <template>
   <div class="nav">
-    <img src="../assets/logo.svg" alt="logo" />
+    <header>
+      <img class="logo" src="../assets/logo.svg" alt="logo" />
+    </header>
     <main>
       <a
         href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML"
@@ -26,9 +28,16 @@
       >
       <a href="http://nodejs.cn/api/" target="_blank">Node.js文档</a>
     </main>
-    <a href="https://github.com/" target="_blank" class="right">
-      <img src="../assets/github.svg" alt="github" />
-    </a>
+    <footer>
+      <a href="https://www.zhihu.com/" target="_blank">
+        <img src="../assets/知乎.svg" alt="github" />
+      </a>
+      <a href="https://juejin.cn/" target="_blank">
+        <img src="../assets/掘金.svg" alt="github" /> </a
+      ><a href="https://github.com/" target="_blank" class="right">
+        <img src="../assets/github.svg" alt="github" />
+      </a>
+    </footer>
   </div>
 </template>
 
@@ -40,27 +49,42 @@ export default {
 
 <style lang="less" scoped>
 .nav {
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid #ccc;
+  position: relative;
+
+  header {
+    position: absolute;
+    width: 90px;
+    .logo {
+      width: 50px;
+      margin: 0;
+      margin-left: 40px;
+    }
+  }
   main {
+    margin-left: 90px;
+    margin-right: 190px;
     padding: 16px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
     a {
       margin: 0 18px;
     }
   }
-  img {
-    width: 50px;
-    margin: 0;
-    margin-left: 40px;
-  }
-  .right img {
-    width: 30px;
-    margin-top: 10px;
-    margin-right: 40px;
+  footer {
+    width: 190px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+      width: 30px;
+      margin-top: 10px;
+      margin-left: 18px;
+    }
   }
 }
+
 @media (max-width: 500px) {
   main {
     display: none;
