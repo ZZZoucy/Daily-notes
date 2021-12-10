@@ -11,6 +11,7 @@ export default new Router({
   routes: [
     {
       path: "/",
+      redirect: "/notebooks",
       component: NotebookList
     },
     {
