@@ -12,78 +12,94 @@
     line-height: 30px;
     padding: 0px 5px;
     float: right;
-    margin-right: 24px;
-    margin-top: 12px;
-  }
-  .btn .iconfont {
-    font-size: 12px;
-  }
-
-  input {
-    width: 300px;
-    height: 30px;
-    line-height: 30px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 3px 5px;
-    outline: none;
-  }
-
-  header {
-    padding: 16px;
-    border-bottom: 1px solid #ccc;
+    margin-right: 42px;
+    margin-top: 16px;
+    .iconfont {
+      font-size: 12px;
+    }
   }
 
   main {
     padding: 60px 40px;
-  }
-  .layout {
-    max-width: 966px;
-    margin: 0 auto;
-  }
+    .layout {
+      max-width: 1000px;
+      margin: 10px auto;
+      padding-top: 28px;
+      position: relative;
+      .x {
+        margin-top: 4px;
+        border-bottom: 1px solid #dedede;
+        h3 {
+          font-size: 16px;
+          color: #000;
+          position: absolute;
+          top: 4px;
+          right: 16px;
+          letter-spacing: 1px;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 700;
+          color: #000;
+          position: absolute;
+          top: 4px;
+          left: 16px;
+          padding-bottom: 4px;
+          letter-spacing: 3px;
+        }
+        p::after {
+          content: "";
+          display: block;
+          border-bottom: 2px solid #000;
+          margin-top: 4px;
+          margin-left: -3px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 5px;
+          right: 92px;
+        }
+      }
+    }
 
-  main h3 {
-    font-size: 16px;
-    color: #000;
-  }
-
-  main .book-list {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
-    background-color: #fff;
-    border-radius: 4px;
-    font-weight: bold;
-  }
-  main .book-list span {
-    font-size: 12px;
-    font-weight: bold;
-    color: #b3c0c8;
-  }
-  main .date,
-  main .action {
-    float: right;
-    margin-left: 10px;
-  }
-  main .iconfont {
-    color: #1687ea;
-    margin-right: 4px;
-  }
-  main .notebook {
-    display: block;
-    cursor: pointer;
-  }
-  main a.notebook:hover {
-    background-color: #f7fafd;
-  }
-
-  main a.notebook div {
-    border-bottom: 1px solid #ebebeb;
-    padding: 12px 14px;
-  }
-
-  main .error-msg {
-    font-size: 12px;
-    color: red;
+    .book-list {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #666;
+      background-color: #fff;
+      border-radius: 4px;
+      font-weight: bold;
+      span {
+        font-size: 12px;
+        font-weight: bold;
+        color: #b3c0c8;
+      }
+    }
+    .date,
+    .action {
+      float: right;
+      margin-left: 10px;
+    }
+    .iconfont {
+      color: #1687ea;
+      margin-right: 4px;
+    }
+    .notebook {
+      display: block;
+      cursor: pointer;
+    }
+    a.notebook:hover {
+      background-color: #f7fafd;
+    }
+    a.notebook div {
+      border-bottom: 1px solid #ebebeb;
+      padding: 12px 14px;
+    }
+    .error-msg {
+      font-size: 12px;
+      color: red;
+    }
   }
 }

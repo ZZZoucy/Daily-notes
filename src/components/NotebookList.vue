@@ -6,7 +6,11 @@
     >
     <main>
       <div class="layout">
-        <h3>学习笔记({{ notebooks.length }})</h3>
+        <div class="x">
+          <p>目录</p>
+          <img src="../assets/images/暂存箱.svg" alt="暂存箱" />
+          <h3>笔记本({{ notebooks.length }})</h3>
+        </div>
         <div class="book-list">
           <router-link
             v-for="notebook in notebooks"
