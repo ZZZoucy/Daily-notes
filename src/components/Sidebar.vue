@@ -12,6 +12,11 @@
         ><i class="iconfont icon-trash"></i
       ></router-link>
     </div>
+    <div class="login">
+      <router-link to="/login" title="登录"
+        ><i class="iconfont icon-login"></i
+      ></router-link>
+    </div>
     <div class="logout">
       <i class="iconfont icon-logout" @click="onLogout"></i>
     </div>
@@ -60,6 +65,13 @@ export default {
 .logout {
   position: absolute;
   bottom: 20px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.login {
+  position: absolute;
+  bottom: 50px;
   width: 100%;
   text-align: center;
   cursor: pointer;
