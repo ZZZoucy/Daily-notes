@@ -1,8 +1,8 @@
 <template>
   <div class="note-sidebar">
-    <span v-if="curBook.id" class="btn add-note" @click="onAddNote"
-      >添加笔记</span
-    >
+    <span v-if="curBook.id" class="add-note" @click="onAddNote">
+      <i class="iconfont icon-plus-circle"></i>添加
+    </span>
     <span v-if="!curBook.id" class="notebook-title">无笔记本</span>
     <el-dropdown
       v-if="curBook.id"
