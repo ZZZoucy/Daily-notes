@@ -4,6 +4,10 @@
     <a href="#" class="btn" @click.prevent="onCreate"
       ><i class="iconfont icon-plus"></i> 新建笔记本</a
     >
+    <div class="beizhu">
+      <h2>学习笔记</h2>
+      <h3>随处随学，随时记录</h3>
+    </div>
     <main>
       <div class="layout">
         <div class="x">
