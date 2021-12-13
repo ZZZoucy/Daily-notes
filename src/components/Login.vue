@@ -103,7 +103,7 @@ export default {
         this.register.notice = "密码长度为6~16个字符";
         return;
       }
-      // 注册账号
+      // 注册账号成功跳转至 notebooks
       this.registerUser({
         username: this.register.username,
         password: this.register.password
@@ -131,7 +131,7 @@ export default {
         this.login.notice = "密码长度为6~16个字符";
         return;
       }
-      // 登录
+      // 登录成功跳转至 notebooks
       this.loginUser({
         username: this.login.username,
         password: this.login.password
@@ -213,7 +213,7 @@ export default {
       border-top: 1px solid #eee;
       height: 0;
       overflow: hidden;
-      // 创建账户和登录的动画是 height 0～193 的变化
+      /* 创建账户和登录的动画是 height 0～193 的变化 */
       transition: height 0.4s;
       &.show {
         height: 193px;

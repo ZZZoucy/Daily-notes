@@ -1,9 +1,9 @@
 <template>
   <div class="detail" id="notebook-list">
     <Nav />
-    <a href="#" class="btn" @click.prevent="onCreate"
-      ><i class="iconfont icon-plus"></i> 新建笔记本</a
-    >
+    <a href="#" class="btn" @click.prevent="onCreate">
+      <i class="iconfont icon-plus"></i> 新建笔记本
+    </a>
     <div class="beizhu">
       <h2>学习笔记</h2>
       <h3>随处随学，随时记录</h3>
@@ -52,7 +52,9 @@ export default {
   components: { Nav },
 
   created() {
+    // 未登录就点击笔记本页面的话，则跳转至登录页面
     this.checkLogin({ path: "/login" });
+    // 登录后获取笔记本列表
     this.getNotebooks();
   },
 
@@ -89,7 +91,7 @@ export default {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         inputPattern: /^.{1,30}$/,
-        // 编辑时input框里给初始值
+        // 编辑时input框里给初始值，就是之前已写着的标题
         inputValue: notebook.title,
         inputErrorMessage: "标题不能为空，且不超过30个字符"
       }).then(({ value }) => {

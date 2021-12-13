@@ -48,6 +48,7 @@ export default {
   },
 
   created() {
+    // 获取笔记本列表
     this.getNotebooks()
       .then(() => {
         this.setCurBook({ curBookId: this.$route.query.notebookId });

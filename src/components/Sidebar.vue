@@ -1,21 +1,22 @@
+<!-- Sidebar组件是每一个页面都有的，可以在 App.vue 中全局引用  -->
 <template>
   <div id="sidebar">
     <Avatar />
     <div class="icons">
-      <router-link to="/note" title="笔记"
-        ><i class="iconfont icon-note"></i
-      ></router-link>
-      <router-link to="/notebooks" title="笔记本"
-        ><i class="iconfont icon-notebook"></i
-      ></router-link>
-      <router-link to="/trash" title="回收站"
-        ><i class="iconfont icon-trash"></i
-      ></router-link>
+      <router-link to="/note" title="笔记">
+        <i class="iconfont icon-note"></i>
+      </router-link>
+      <router-link to="/notebooks" title="笔记本">
+        <i class="iconfont icon-notebook"></i>
+      </router-link>
+      <router-link to="/trash" title="回收站">
+        <i class="iconfont icon-trash"></i>
+      </router-link>
     </div>
     <div class="login">
-      <router-link to="/login" title="登录"
-        ><i class="iconfont icon-login"></i
-      ></router-link>
+      <router-link to="/login" title="登录">
+        <i class="iconfont icon-login"></i>
+      </router-link>
     </div>
     <div class="logout">
       <i class="iconfont icon-logout" @click="onLogout"></i>
@@ -35,7 +36,7 @@ export default {
   methods: {
     // 注销账号
     ...mapActions(["logout"]),
-
+    // 注销账号成功后跳转至 login 页面
     onLogout() {
       this.logout({ path: "/login" });
     }
